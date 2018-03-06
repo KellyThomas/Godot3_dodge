@@ -33,7 +33,9 @@ custom_solver_bias = 0.0
 radius = 34.8222
 height = 28.8308
 
-[node name="Mob" type="RigidBody2D"]
+[node name="Mob" type="RigidBody2D" index="0" groups=[
+"mobs",
+]]
 
 input_pickable = true
 collision_layer = 1

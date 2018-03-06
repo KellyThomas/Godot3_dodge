@@ -7,6 +7,8 @@ func _ready():
 	randomize()
 	
 func new_game():
+	for mob in get_tree().get_nodes_in_group("mobs"):
+		mob.queue_free()
 	score = 0
 	$HUD.update_score(score)
 	$Player.start($StartPosition.position)
